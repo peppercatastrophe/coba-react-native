@@ -5,6 +5,7 @@ import { DefaultTheme, DarkTheme } from '@react-navigation/native';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import AnimeDetail from './pages/AnimeDetail';
+import Register from './pages/Register';
 
 const Stack = createNativeStackNavigator();
 
@@ -55,6 +56,17 @@ export default function App() {
               backgroundColor: '#000'
             }
           })} 
+        />
+        
+        <Stack.Screen 
+          name="Register" 
+          component={Register}
+          options={{ 
+            headerTintColor:'#fff',
+            headerStyle:{
+              backgroundColor: '#000'
+            }
+          }} 
         />
         
       </Stack.Navigator>
