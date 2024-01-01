@@ -2,21 +2,7 @@ import axios from "../configs/instance";
 import { Button, StyleSheet, Text, TextInput, View } from "react-native";
 import styles from "../styles/style";
 import { useState } from "react";
-
-const FormStyles = StyleSheet.create({
-  text: {
-    color: "#fff",
-    height: 18,
-  },
-  textInput: {
-    color: "#fff",
-    height: 35,
-    borderColor: "#fff",
-    backgroundColor: "#333",
-    marginBottom: 20,
-    paddingLeft: 10,
-  },
-});
+import { FormStyles } from '../styles/form-styles'
 
 export default function Register() {
   const [email, setemail] = useState("");
